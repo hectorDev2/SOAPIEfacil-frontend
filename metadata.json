@@ -1,0 +1,7 @@
+{
+  "name": "SOAPIEfacil",
+  "description": "An intelligent clinical documentation assistant that uses AI to convert medical conversations into structured SOAPIE notes for nursing and healthcare professionals.",
+  "requestFramePermissions": [
+    "microphone"
+  ]
+}

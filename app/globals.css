@@ -1,0 +1,33 @@
+@import "tailwindcss";
+
+@plugin "@tailwindcss/forms";
+@plugin "@tailwindcss/typography";
+@plugin "@tailwindcss/container-queries";
+
+@theme {
+  --color-primary: #40E0D0;
+  --color-primary-dark: #00CED1;
+  --color-background-dark: #0a0f12;
+  --color-surface-dark: #12191d;
+  --color-surface-card: #182226;
+  --color-text-secondary: #94a3b8;
+
+  --font-display: "Plus Jakarta Sans", sans-serif;
+  --font-body: "Inter", sans-serif;
+}
+
+body {
+    background-color: var(--color-background-dark);
+    color: #f8fafc;
+    font-family: var(--font-body);
+    margin: 0;
+    padding: 0;
+    -webkit-tap-highlight-color: transparent;
+}
+
+.no-scrollbar::-webkit-scrollbar { display: none; }
+.no-scrollbar { -ms-overflow-style: none; scrollbar-width: none; }
+
+/* Smooth Page Transitions style Next.js */
+.page-transition-enter { opacity: 0; transform: translateY(10px); }
+.page-transition-enter-active { opacity: 1; transform: translateY(0); transition: opacity 300ms, transform 300ms; }
